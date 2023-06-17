@@ -1,13 +1,66 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fefefe;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Layout Component CSS */
+.layout {
+  max-width: 1000px;
+  margin: 0 auto;  
+  padding: 20px;
+  padding-top: 100px;
+}
+
+/* Search Component CSS */
+.search-input {
+  width: 100%;
+}
+
+/* Players Component CSS */
+.players-container {
+  margin-top: 100px;
+}
+
+.player-card {
+  height: 100%;
+}
+
+.player-name-container {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  white-space: pre-wrap;
+  color: #a1aab8;
+}
+
+.player-name {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.player-image {
+  height: 140px;
+  background-size: contain !important;
+  object-fit: contain !important;
+}
+
+.buy-button {
+  width: 100%;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.match-container {
+  border: 1px solid #4e4a4a;
+  padding: 8px;
+  border-radius: 10px;
+  color: #4e4a4a;
 }
